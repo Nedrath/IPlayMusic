@@ -1,3 +1,3 @@
-LINK TIL NETLIFY - https://iplaymusic-mark.netlify.app/welcome/
+Link til Netlify - https://iplaymusic-mark.netlify.app/welcome/
 
 # iPlayMusic !
