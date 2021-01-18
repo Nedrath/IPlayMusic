@@ -1,0 +1,17 @@
+.slider-playlist {
+    display: grid;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &__img {
+        grid-row: 1/2;
+        margin-top: 24px;
+        margin-right: 40px;
+        margin-left: 20px; 
+        margin-bottom: 15px;
+        object-fit: cover;
+        height: 130px;
+        min-width: 130px;
+    }
+}

@@ -1,0 +1,43 @@
+.albumDetails {
+    margin-bottom: 5em;
+
+    &__text {
+        margin-bottom: 264px;
+    }
+
+    &__box {
+        display: grid;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 400px;
+        padding-bottom: 44px;
+    }
+
+    &__allSongs {
+        margin-top: 380px;
+        position: absolute;
+        // top: 1264px;
+    }
+
+    &__songs {
+        margin-top: 25px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+        //RESPONSIVE
+        width: 100.1%;
+        height: 400px;
+        object-fit: cover;
+        //RESPONSIVE
+    }
+
+    &__buttonsBox {
+        display: flex;
+    }
+}

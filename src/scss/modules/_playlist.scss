@@ -1,0 +1,36 @@
+.playlist {
+    margin-bottom: 4em;
+    overflow-x: hidden;
+
+    &__title {
+        margin-top: 36px;
+        margin-bottom: 24px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+    .playlistTop {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        margin-top: 16px;
+        margin-bottom: 36px;
+
+        &__text {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0px 45px;
+        }
+    }
+}

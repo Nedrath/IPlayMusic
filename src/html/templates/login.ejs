@@ -1,0 +1,35 @@
+<%- include ("../partials/before-header") %>
+
+<main class="main-grid">
+
+    <div class="login">
+        <div class="loginTitle">
+            <h1 class="main-title_black main-title_marginTop">Log in</h1>
+        </div>
+        <div class="loginform">
+            <form class="loginForm__form" class="" action="">
+                <label class="loginForm__label small-title-fat" for="username">Username</label>
+                <div class="loginForm__box">
+                    <input class="loginForm__input" type="text" id="username" name="username"
+                        placeholder="Enter Your Username">
+                    <i class="black" data-feather="user"></i>
+                </div>
+                <label class="loginForm__label small-title-fat" for="password">Password</label>
+                <div class="loginForm__box">
+                    <input class="loginForm__input" type="password" id="password" name="password"
+                        placeholder="Enter Your Password">
+                    <i class="black" data-feather="key"></i>
+                </div>
+                
+                <button class="buttomBig-button buttonBig-button_login" type="submit"><a class="links" style="width: 100%; color: #341931; outline: none;" href="../index.html">LOG IN</a></button>
+                
+            </form>
+            <div class="circle circle_login">
+                <ion-icon class="icons_big" style="color: white;" name="finger-print-outline"></ion-icon>
+            </div>
+            <p class="secondary-title secondary-title_login">One-Touch Login</p>
+        </div>
+    </div>
+</main>
+
+<%- include ("../partials/after-footer-noNav") %>

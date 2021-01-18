@@ -1,0 +1,34 @@
+
+.songsBox {
+    display: grid;
+    grid-template-columns: 22% 50% 27.5%;
+    margin-bottom: 17px;
+    align-items: center;
+    text-decoration: none;
+    color: $secondary-color;
+
+    &_details {
+        grid-template-columns: 16% 3fr 1fr;
+    }
+
+    &_margin {
+        margin: 24px 6.6%;
+    }
+
+    &__img {
+        height: 50px;
+        width: 50px;
+        margin-right: 18px;
+    }
+
+    &__text {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 90%;
+
+        &_margin {
+            margin-bottom: 7px;
+        }
+    }
+}

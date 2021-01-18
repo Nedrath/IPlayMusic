@@ -1,0 +1,54 @@
+
+.pickButtons {
+        display: flex;
+        user-select: none;
+        width: 100%;
+        height: 54px;
+        border: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 24px;
+        margin-bottom: 16px;
+        outline: none;
+
+        &_hashtag {
+            border-radius: 50px;
+            background-color: $primary-color;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            height: 41px;
+            width: auto;
+            padding: 0px 12px;
+            margin-right: 8px;
+            margin-top: 16px;
+        }   
+
+        &_alternative {
+            background-color: #d70060;
+        }
+        &_blues {
+            background-color: #e54028;
+        }
+        &_classical {
+            background-color: #f18d05;
+        }
+        &_country {
+            background-color: #f2bc06;
+        }
+        &_dance {
+            background-color: #5eb11c;
+        }
+        &_electronic {
+            background-color: #3a7634;
+        }
+        &_fitness {
+            background-color: #0abebe;
+        }
+        &_hip {
+            background-color: #00a1cb;
+        }
+        &_industrial {
+            background-color: #115793;
+        }
+    }

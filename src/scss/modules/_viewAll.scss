@@ -1,0 +1,22 @@
+
+// OVERSKRIFT - VIEW ALL BOX - UTILITY CLASS
+
+.view-all {
+    display: flex;
+    justify-content: space-between;
+
+    &_margin {
+        margin: auto 6.6%;
+    }
+    &_marginTopBottom {
+        margin-bottom: 24px;
+        margin-top: 72px;
+    }
+
+    &__link {
+        color: $primary-color;
+        font-size: 15px;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+}

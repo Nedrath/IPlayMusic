@@ -1,0 +1,33 @@
+<%- include ("../partials/before-header") %>
+<%- include ("../partials/header-white", {title: "PLAYLISTS"}) %>
+
+<main class="main-grid main-grid_nomargin">
+
+    <div class="playlist">
+        <h1 class="playlist__title main-title_white margin-left-right">Playlists</h1>
+        <img class="playlist__img" src="\assets\img\sound-wave.svg" alt="">
+
+        <div class="slider-playlist">
+            <!-- HTML-JS INSERTS HERE  -->
+        </div>
+
+        <div class="playlistTop">
+            <!-- HTML-JS INSERTS HERE  -->
+        </div>
+        
+        <div class="playlist-songs">
+            <!-- HTML-JS INSERTS HERE  -->
+        </div>
+
+        <div class="button-box">
+            <button class="buttomBig-button buttomBig-button_color">
+                LISTEN ALL
+            </button>
+        </div>
+    </div>
+</main>
+
+<script src="../assets/js/api-spotify.js"></script>
+<script src="../assets/js/playlist-api.js"></script>
+<%- include ("../partials/footer") %>
+<%- include ("../partials/after-footer") %>

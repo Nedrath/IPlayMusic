@@ -1,0 +1,30 @@
+<%- include ("../partials/before-header") %>
+<%- include ("../partials/header-noSearch", {title: "ALBUM"}) %>
+
+<main class="main-grid">
+
+    <div class="albumDetails">
+        <div class="albumDetails__box">
+            <h1 class="albumDetails__title main-title_white"></h1>
+            <p class="albumDetails__text small-title-fat small-title-fat_white"></p>
+            <!-- <p class="subTitle white">Genres Hashtags</p>
+            <div class="albumDetails__buttonsBox">
+                <div class="pickButtons pickButtons_hashtag">
+                    #Country
+                </div>
+                <div class="pickButtons pickButtons_hashtag">
+                    #Country road
+                </div>
+            </div> -->
+            <img class="albumDetails__img filter-img-darker" src='' alt=''>
+            <div class="view-all view-all_marginTopBottom albumDetails__allSongs">
+                <h3 class="view-all__title small-title-fat">All Songs</h3>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../assets/js/api-spotify.js"></script>
+<script src="../assets/js/album-details.js"></script>
+<%- include ("../partials/footer") %>
+<%- include ("../partials/after-footer") %>

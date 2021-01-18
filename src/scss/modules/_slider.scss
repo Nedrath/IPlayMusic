@@ -1,0 +1,15 @@
+.slider {
+    display: grid;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &__img {
+        grid-row: 1/2;
+        margin-top: 24px;
+        margin-bottom: 36px;
+        margin-left: 26px;
+        object-fit: cover;
+        height: 130px;
+    }
+}

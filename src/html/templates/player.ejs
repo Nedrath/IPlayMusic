@@ -1,0 +1,43 @@
+<%- include ("../partials/before-header") %>
+<%- include ("../partials/header-noSearch", {title: "PLAYING"}) %>
+
+<main class="main-grid main-grid_nomargin">
+
+    <div class="player ">
+        <img class="player__img filter-img-darker" src='' alt=''>
+        <div class="portraitBox">
+            <figure class="portraitBox__circle"></figure>
+            <figure class="portraitBox__circle_big"></figure>
+            <img class="portraitBox__portrait" src='' alt=''>
+        </div>
+        <div class="player__name">
+            <h3 class="player__name_textBig small-title-fat white"></h3>
+            <p class="player__name_textSmall small-text-lighter white"></p>
+        </div>
+        <div class="musicPlayer">
+            <div class="musicPlayer__playtime">
+                <input class="musicPlayer__timeSlide" type="range" min="0" max="0" value="0">
+                <div class="musicPlayer__timeBox">
+                    <p class="musicPlayer__times">0:00</p>
+                    <p class="musicPlayer__time"></p>
+                </div>
+            </div>
+            <div class="musicPlayer__controls">
+                <audio id="myAudio">
+                    <source src="/assets/media/ElPolloNegro-Nusse.mp3">
+                </audio>
+                <i class="white fill-white" data-feather="skip-back"></i>
+                <i class="white fill-white" data-feather="rewind"></i>
+                <ion-icon class="playButton" name="play"></ion-icon>
+                <ion-icon class="pauseButton hide" name="pause"></ion-icon>
+                <i class="white fill-white" data-feather="fast-forward"></i>
+                <i class="white fill-white" data-feather="skip-forward"></i>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../assets/js/api-spotify.js"></script>
+<script src="../assets/js/player-api.js"></script>
+
+<%- include ("../partials/after-footer") %>

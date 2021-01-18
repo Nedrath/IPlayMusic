@@ -1,0 +1,14 @@
+
+.categories {
+    margin-bottom: 4em;
+
+    &__article {
+        width: 100%;
+    }
+    &__foldout {
+        margin: 16px;
+        font-size: 15px;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,41 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding-bottom: 30%;
+
+    .loginForm {
+        
+        &__form {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+        }
+
+        &__label {
+            margin-bottom: 20px;
+            margin-top: 24.5px;
+        }
+
+        &__box {
+            border-bottom: 3px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__input {
+            border: none;
+            padding: 15.5px 0px;
+            width: 100%;
+            outline: none;
+
+            &::placeholder {
+                color: #111625;
+                opacity: 1;
+            }
+        }
+    }   
+}

@@ -1,0 +1,31 @@
+<%- include ("../partials/before-header") %>
+<%- include ("../partials/header", {title: "MUSIC"}) %>
+
+<main class="main-grid main-grid_nomargin">
+
+    <div class="albums">
+
+        <h1 class="main-title main-title_margin">All Albums</h1>
+        <div class="view-all view-all_margin">
+            <h3 class="view-all__title small-title-fat">Featured Albums</h3>
+            <a class="view-all__link" href="#">View All</a>
+        </div>
+
+        <div class="slider">
+        </div>
+
+        <div class="view-all view-all_margin">
+            <h3 class="view-all__title small-title-fat">New Releases</h3>
+            <a class="view-all__link" href="#">View All</a>
+        </div>
+
+        <!-- SONGSBOX JS INDSÆTTES HER  -->
+
+    </div>
+
+</main>
+
+<script src="../assets/js/api-spotify.js"></script>
+<script src="../assets/js/albums-api.js"></script>
+<%- include ("../partials/footer") %>
+<%- include ("../partials/after-footer") %>

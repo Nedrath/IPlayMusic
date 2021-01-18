@@ -1,0 +1,273 @@
+// LAYOUT
+
+html {
+    color: $secondary-color;
+    background-color: white;
+    color: $secondary-color;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1fr);
+    object-fit: cover;
+    margin: auto 6.6%;
+    // overflow-x: hidden;
+
+    &_nomargin {
+        margin: 0px 0px;
+    }
+}
+
+// TEKST - OVERSKRIFTER
+
+.main-title {
+    background: $gradiant-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0px;
+
+    &_margin {
+        margin: 6.6%;
+    }
+    &_marginTop {
+        margin-top: 25px;
+    }
+
+    &_white {
+        color: white;
+        margin: 20px 0px;
+    }
+    &_black {
+        color: #111625;
+    }
+}
+
+.secondary-title {
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+
+    &_white {
+        color: white;
+    }
+    &_login {
+        margin-top: 12px;
+        text-align: center;
+    }
+}
+
+.small-title-fat {
+    font-size: 15px;
+    font-weight: bold;
+
+    &_white {
+        color: white;
+    }
+    &_black {
+        color: #111625;
+    }
+    &_wrap {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 90%;
+    }
+    &_wrap-details {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+.button-text-white {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.subTitle {
+    margin-top: 114px;
+}
+
+.small-text-lighter {
+    font-size: 12px;
+    font-weight: lighter;
+
+    &_right {
+        text-align: right;
+        justify-content: right;
+        align-items: center;
+    }
+    &_wrap {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+// UTILITY ALL
+
+.activeIcons {
+    color: black;
+}
+
+.textWrap {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95%;
+}
+
+.margin-left-right {
+    margin: auto 6.6%;
+}
+
+.links {
+    text-decoration: none;
+    outline: none;
+}
+
+.filter-img-darker {
+    filter: brightness(0.6);
+}
+
+.playButton {
+    color: $primary-color;
+    fill: $primary-color;
+    height: 90px;
+    width: 80px;
+}
+.pauseButton {
+    color: $primary-color;
+    fill: $primary-color;
+    height: 90px;
+    width: 80px;
+}
+
+.hide {
+    display: none;
+}
+
+// ICONS - UTILITY
+
+.white {
+    color: white;
+}
+
+.fill-white {
+    fill: white;
+}
+
+.arrowIcon {
+    color: $secondary-color;
+}
+
+.icons {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    color: $primary-color;
+
+    &_medium {
+        width: 20px;
+        height: 20px;
+    }
+
+    &_white {
+        color: white;
+
+    }
+    &_active {
+        color: #111625;
+    }
+    &_small {
+        height: 12px;
+        width: 12px;
+        fill: white;
+    }
+    &_big {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+// IMAGE MODS - UTILITY CLASS
+
+.round {
+    border-radius: 8px;
+}
+
+.shadow {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+// DARKMODE & LIGHTMODE
+
+.theme-light {
+    $primary-color: #ff1168;
+    $secondary-color: #341931;
+    $additional-color: #111625;
+    color: #111625;
+    background: white;
+    background-color: white;
+    transition: 1s;
+    
+    .navigation {
+        background-color: white;
+        transition: 1s;
+    }
+}
+
+.theme-dark {
+    $primary-color: #ff1168;
+    $secondary-color: white;
+    $additional-color: white;
+    color: $secondary-color;
+    background: #341931;
+    background-color: #341931;
+    transition: 1s;
+
+    a {
+        color: $secondary-color;
+        transition: 1s;
+    }
+    p {
+        color: $secondary-color;
+        transition: 1s;
+    }
+    h3 {
+        color: $secondary-color;
+        transition: 1s;
+    }
+    .ion-icon {
+        color: $secondary-color;
+        transition: 1s;
+    }
+    .arrowIcon {
+        color: $secondary-color;
+        transition: 1s;
+    }
+    .navigation {
+        background-color: #341931;
+        transition: 1s;
+    }
+}
+
+// ANIMATION - INTERACTION
+
+.clicked-animation {
+    animation-name: flipAnimation;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes flipAnimation {
+    0% {
+        transform: rotateX(160deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
